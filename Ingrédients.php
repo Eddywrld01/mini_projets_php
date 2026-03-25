@@ -20,7 +20,7 @@ function calculer_prix($liste,$prix){
 }
 ?>
 <!-- Formulaire -->
-<form action="test.php" method="GET">
+<form action="Ingrédients.php" method="GET">
     <label >
         <input type="checkbox" name="ingredient[]" value="fromage"> fromage (500)
     </label>

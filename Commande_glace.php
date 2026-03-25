@@ -21,7 +21,7 @@ $cornets = [
 // $value = valeur du champ du formulaire
 // $liste : liste contenant les données envoyées à l'URL par le formulaire
 function checkbox($name,$value,$liste){
-    // Tout d'abord l'on vérifie si la valeur du champ du formulaire est la même que celle figurant dans l'URL 
+    // Tout d'abord l'on vérifie si la valeur du champ du formulaire est la même que celle figurant dans l'URL et si c'est le cas la case est cochée
     if (in_array($value,$liste)){
         $checked = "checked";
     } else {
@@ -78,10 +78,10 @@ if(isset($_GET['cornet'])){
 <form action="Commande_glace.php" method="GET">
     <h2>Liste des parfums:</h2>
     <?php foreach($parfums as $parfum => $prix): ?>
-    <label>
-        <?= checkbox("parfum", $parfum,$liste_parfum) ?>
-        <?= $parfum ?> - <?= $prix ?>F
-    </label>
+        <label>
+            <?= checkbox("parfum", $parfum,$liste_parfum) ?>
+            <?= $parfum ?> - <?= $prix ?>F
+        </label>
     <?php endforeach ?>
 
     <h2>Liste des supplements:</h2>

@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Formulaire -->
+    <!-- Formulaire qui calcule deux nombres en fonction de l'opérateur choisi -->
      <?php
         // Créer différentes variables qui vont prendre les valeurs envoyées par le formulaire 
         if(isset($_POST['nombre1'])){
@@ -32,8 +32,6 @@
         }else{
             $op="";
         }
-        
-        
     ?>
     <div class="formulaire">
         <h1>Calcul de 2 nombres</h1>
@@ -48,7 +46,7 @@
                 <option value="-" <?= $op=='-'?'selected':''?>>Soustraction(-)</option>
                 <option value="*" <?= $op=='*'?'selected':''?>>Multiplication(*)</option>
                 <option value="/" <?= $op=='/'?'selected':''?>>Division(/)</option>
-                <!-- La condition ternaire signifie que si une opération à été choisie alors l'opération choisie reste selectionée. J'ai fait cela parceque si lorsque je choisie une operation, elle retourne à addition après le calcul -->
+                <!-- La condition ternaire signifie que si une opération à été choisie alors l'opération choisie reste selectionée. J'ai fait cela parceque lorsque je choisissais une operation, elle retournait à l'addition après le calcul -->
             </select>
             <br>
             <br>
@@ -62,7 +60,7 @@
     </div>
     <div class="resultat">
         <?php
-            // Une variable qui contiendra le résultat à afficher
+            // Une variable qui contiendra le résultat à afficher en fonction de ce que l'utilisateur choisi
             if ($_SERVER['REQUEST_METHOD']=="POST"){
                 switch ($op){
                     case '+':
