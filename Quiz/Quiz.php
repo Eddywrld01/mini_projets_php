@@ -7,8 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>CULTURE G</h2>
-    <p>Bienvenue! <br> Participez au quiz pour tester vos connaissances en culture générale.</p>
+    <header>
+        <h2>CULTURE G</h2>
+        <p>Bienvenue! <br> Participez au quiz pour tester vos connaissances en culture générale.</p>
+    </header>
 <?php
 
 // Je crée un tableau contenant l'ensemble de mon quiz à savoir un tableau associatif dont les clés sont les questions et les valeurs associées étant eux mêmes des tableaux contenant des clés qui sont la lettre de la question et les valeurs associées les réponses en elles mêmes
@@ -39,7 +41,7 @@
                 "C" => "Vincent van Gogh"
             ],
             "Qui est le créateur de Facebook ?" => [
-                "A" => "Bill Gates$",
+                "A" => "Bill Gates",
                 "B" => "Mark Zuckerberg",
                 "C" => "Steve Jobs"
             ],
@@ -125,7 +127,7 @@
     ?>
 
 
-<form id="Monquiz" action="Quiz.php" method="POST">
+<form id="Monquiz" action="resultat.php" method="POST">
 <!-- D'abord j'initialise un compteur à 1 qui numérotera les questions aux fur et à mesure -->
     <?php $i = 1;?>
 
@@ -150,19 +152,14 @@
             ?> 
         </div>
     <?php endforeach ?>
-    <?php
-    $total = 0;
-        if(isset($_POST['Q1']) && $_POST['Q1']=="Moscou"){
-            $total+=1;
-        }else{
-            $total+=0;
-        }
-
-    echo "$total";
-    ?>
-    
+        
 </form>
+<br>
 <button type="submit" form="Monquiz">TESTEZ</button>
+<button type="reset" form="Monquiz">ANNULER</button>
+<footer>
+    <p>© 2026 EJEB - Tous droits réservés</p>
+</footer>
 </body>
 </html>
 
