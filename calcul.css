@@ -1,0 +1,55 @@
+body{
+    font-family: "Montserrat";
+    background-color: rgba(111, 14, 14, 0.31);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+label{
+    font-size: 18px;
+}
+input[type="number"]{
+    font-family: "Montserrat";
+}
+select{
+    font-family: "Montserrat";
+}
+form{
+    background-color: white;
+    padding: 30px;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 15px;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color:chocolate;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+button:hover{
+    background-color: rgb(140, 66, 13);
+    cursor: pointer;
+}
+
+
+.resultat{
+    background-color: white;
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}

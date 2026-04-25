@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    height: 100vh;
+    background-color: #1F1F1F;
+    color: #F7EDE2;
+    padding: 14px 20px;
+    font-family: Ubuntu;
+    font-size: 18px;
+    
+}
+h2{
+    color: #CDB4DB;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.question-text{
+    color: #CDB4DB;
+}
+
+form{
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+.questions{
+    padding: 8px 20px;
+    border: 4px solid rgba(46, 45, 45, 0.59);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    
+}
+
+button{
+    padding: 8px 50px;
+    color: #CDB4DB;
+    background-color: #1F1F1F;
+    position: relative;
+    left: 45%;
+    border: solid #CDB4DB;
+    outline: none;
+    font-size: 16px;
+    font-family: Ubuntu;
+}
+button:hover{
+    color: black;
+    background-color: #CDB4DB;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
